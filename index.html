@@ -31,10 +31,70 @@
         <div class="menu">
             <nav class="menu__main">
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-item-link" href="">О нас</a></li>
-                    <li class="menu__list-item"><a class="menu__list-item-link" href="">Тарифы ведения учёта</a></li>
-                    <li class="menu__list-item"><a class="menu__list-item-link" href="">Бухгалтерские услуги</a></li>
-                    <li class="menu__list-item"><a class="menu__list-item-link" href="">Контакты</a></li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-item-link menu__list-item-link--about" href="">О нас</a>
+                        <div class="menu__list-item-link--drop-info">
+                            <p>
+                                Мы — компания 1С:БухОбслуживание Простые решения. Живем и работаем в красивом древнем
+                                городе Смоленске. Занимаемся автоматизацией предприятий России и Белоруссии,
+                                бухгалтерским и юридическим сопровождением бизнеса. Мы используем современные
+                                технологии, делаем свою работу хорошо и честно, стараясь найти простые решения для
+                                сложных задач.
+                                <br>
+                                <br>
+                                В команде БухОбслуживания 17 человек: руководитель, главные бухгалтеры, бухгалтеры,
+                                оператор по вводу данных и менеджер. Такая небольшая команда помогает более 300 клиентам
+                                вести учёт точно и без ошибок. Главные показатели регулярно проверяет автоматическая
+                                система, а фирма 1С проводит Централизованный аудит и проверяет, как мы ведём учёт для
+                                клиентов. Получается двойная проверка качества.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-item-link menu__list-item-link--services" href="">Бухгалтерские услуги</a>
+                        <div class="menu__list-item-link--drop-info">
+                            <ul class="menu__list-item-link--drop-info-list">
+                                <li class="menu__list-item-link--drop-info-list-item">Регистрация ИП</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Регистрация ООО</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Восстановление бухгалтерского
+                                    учёта</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Учёт для продавцов на
+                                    маркетплейсах</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Услуги для граждан Белоруссии:<br>
+                                    открытие фирмы, бухобслуживание</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Маркировка</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Экспресс-аудит бухгалтерского
+                                    учёта</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Ввод первичных документов</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Доступ к программе для учёта</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Проверка контрагентов 1СПАРК Риски
+                                </li>
+                                <li class="menu__list-item-link--drop-info-list-item">Подключение к 1С-ЭДО</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Подключение 1С:Распознавание<br>
+                                    первичных документов</li>
+                                <li class="menu__list-item-link--drop-info-list-item">Аутстаффинг бизнес-ассистентов
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-item-link menu__list-item-link--contacts" href="">Контакты</a>
+                        <div class="menu__list-item-link--drop-info menu__list-item-link--drop-info--contacts">
+                            <div class="menu__list-item-link--image">
+                                <img src="./imeges/bff139fa05ac583f685a523ab3d110a0_1_1_1_1_1_1.png" alt="">
+                            </div>
+                            <div class="header__contacts header__contacts--drop-info">
+                                <p class="header__contacts-date">Пн-Пт 09:00 – 18:00</p>
+                                <p class="header__contacts-word">Контакты</p>
+                                <a class="header__contacts-telephone" href="tel:+99995555555">
+                                    +7 (951) 357-651
+                                </a>
+                                <a class="header__contacts-telephone" href="tel:+99995555555">
+                                    +7 (952) 535-61-13
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <img class="navigation_loop" src="/imeges/Link.svg" alt="-">
@@ -49,18 +109,24 @@
                     свяжется наш специалист и ответит на
                     вопросы.</p>
                 <label for="name">
-                    <input class="advantages-form__imput--name" type="text" name="name" id="name" required>
+                    <input class="advantages-form__input--name" placeholder="Ваше имя" type="text" name="name" id="name"
+                        required>
                 </label>
 
                 <label for="telephone">
-                    <input class="advantages-form__imput--tel" type="tel" name="telephone" id="telephone" required>
+                    <input class="advantages-form__input--tel" placeholder="Ваш телефон*" type="tel" name="telephone"
+                        id="telephone" required>
                 </label>
 
                 <label for="question">
-                    <input class="advantages-form__imput--question" type="text" name="question" id="question" required>
+                    <textarea class="advantages-form__input--question" placeholder="Вопрос" name="question"
+                        id="question" required></textarea>
                 </label>
-                <div class="advantages-form__accept">обработку персональных
-                    данных.</div>
+                <label class="advantages-form__accept">
+                    <input type="checkbox" class="advantages-form__input--check visually-hidden">
+                    Я согласен на <span class="advantages-form__accept--text">обработку персональных
+                        данных.</span>
+                </label>
                 <button class="btn advantages-form__btn" type="submit">Отправить</button>
             </form>
             <div class="advantages__conteiner-advantages">
