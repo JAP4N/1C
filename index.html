@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
-    
+    <header class="header content-section">
+        <div class="header__container">
+            <a class="header__logo" href="#0">
+                <img class="header__logo-img" src="/imeges/1С_ БухОбслуживание.png" alt="-">
+            </a>
+            <h1 class="header__title">Ведение бухучета в Смоленске и Смоленской области</h1>
+            <div class="header__contacts">
+                <p class="header__contacts-date">Пн-Пт 09:00 – 18:00</p>
+                <p class="header__contacts-word">Контакты</p>
+                <a class="header__contacts-telephone" href="tel:+99995555555">
+                    +7 (951) 357-651
+                </a>
+                <a class="header__contacts-telephone" href="tel:+99995555555">
+                    +7 (952) 535-61-13
+                </a>
+            </div>
+            <button class="btn header__btn_tel">Авторизоваться</button>
+        </div>
+        <div class="menu">
+            <nav class="menu__main">
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a class="menu__list-item-link" href="">О нас</a></li>
+                    <li class="menu__list-item"><a class="menu__list-item-link" href="">Тарифы ведения учёта</a></li>
+                    <li class="menu__list-item"><a class="menu__list-item-link" href="">Бухгалтерские услуги</a></li>
+                    <li class="menu__list-item"><a class="menu__list-item-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <img class="navigation_loop" src="/imeges/Link.svg" alt="-">
+        </div>
+    </header>
+    <main>
+        <section class="advantages content-section">
+            <form class="advantages-form" action="" method="">
+                <h2 class="advantages__form-title">Получить консультацию по
+                    телефону</h2>
+                <p class="advantages__form-text">Оставьте заявку и в ближайшее время с вами
+                    свяжется наш специалист и ответит на
+                    вопросы.</p>
+                <label for="name">
+                    <input class="advantages-form__imput--name" type="text" name="name" id="name" required>
+                </label>
+
+                <label for="telephone">
+                    <input class="advantages-form__imput--tel" type="tel" name="telephone" id="telephone" required>
+                </label>
+
+                <label for="question">
+                    <input class="advantages-form__imput--question" type="text" name="question" id="question" required>
+                </label>
+                <div class="advantages-form__accept">обработку персональных
+                    данных.</div>
+                <button class="btn advantages-form__btn" type="submit">Отправить</button>
+            </form>
+            <div class="advantages__conteiner-advantages">
+                <h2 class="advantages__title">Бухгалтерское сопровождение на аутсорсинге помогает сократить
+                    расходы:</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__list-item">вы выбираете подходящий тариф, и если какие-то бухгалтерские
+                        услуги
+                        вам нужны не каждый
+                        месяц, вы сможете оплатить их разово</li>
+                    <li class="advantages__list-item">не нужно оплачивать отпускные, больничные, обустраивать рабочее
+                        место
+                        — о нашей команде
+                        бухгалтеров заботимся мы сами</li>
+                    <li class="advantages__list-item">стоимость бухгалтерских услуг будет еще ниже, если вы сами вносите
+                        часть документов</li>
+                    <li class="advantages__list-item">если понадобятся юридические услуги, тоже поможем: зарегистрируем
+                        ИП
+                        или ООО, оформим
+                        внесение изменений в сведения о юрлице или поможем с ликвидацией</li>
+                    <li class="advantages__list-item">вы можете выбрать удобный для вас способ передачи документов: по
+                        электронной почте, через
+                        мессенджеры или курьером</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
