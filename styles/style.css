@@ -144,7 +144,7 @@
     position: relative;
     padding-bottom: 10px;
     font-size: 16px;
-    line-height: 135%;
+    line-height: 137%;
     color: #111;
 }
 
@@ -352,4 +352,271 @@
     width: 10px;
     height: 10px;
     background-color: #fecc00;
+}
+
+.login-form {
+    max-width: 350px;
+    margin: -50px auto;
+    padding: 30px 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.login-form__title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #e31e24;
+}
+.login-form__input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+.login-form__btn {
+    background: #e31e24;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.login-form__btn:hover {
+    background: #b81a1f;
+}
+.login-form__error {
+    color: #e31e24;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.tariffs {
+    margin: 40px auto 0;
+    width: 100%;
+    padding: 0 0 55px 0;
+}
+.tariffs__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #111;
+    padding: 35px 0;
+}
+.tariffs__cards {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.tariff-card {
+    background: #fff;
+    border: 2px solid #fecc00;
+    border-radius: 8px;
+    padding: 32px 32px 24px 32px;
+    max-width: 699px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 695px;
+    box-sizing: border-box;
+}
+.tariff-card__header {
+    color: #e31e24;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.tariff-card__desc {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 18px;
+    text-align: left;
+}
+.tariff-card__price {
+    color: #e31e24;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.tariff-card__subtitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+}
+.tariff-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+.tariff-card__list li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.4;
+}
+.tariff-card__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background: #fecc00;
+    border-radius: 2px;
+    display: inline-block;
+}
+.tariff-card__btn {
+    margin-top: auto;
+    width: 160px;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 0;
+}
+
+.footer {
+    background: #232323;
+    color: #fff;
+    padding: 60px 0 0 0;
+    width: 100%;
+    font-size: 16px;
+}
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+.footer__col {
+    min-width: 180px;
+    max-width: 260px;
+    margin-bottom: 30px;
+}
+.footer__col-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    color: #fff;
+}
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__list li {
+    margin-bottom: 8px;
+}
+.footer__list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer__list a:hover {
+    color: #fecc00;
+}
+.footer__col--contacts {
+    min-width: 240px;
+    max-width: 320px;
+    text-align: right;
+}
+.footer__contacts-phones a {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+.footer__contacts-phones a:hover {
+    color: #fecc00;
+}
+.footer__contacts-mail {
+    margin: 10px 0 5px 0;
+    font-size: 1rem;
+}
+.footer__contacts-mail a {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer__contacts-address {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.footer__bottom {
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    padding: 18px 40px 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+.footer__privacy a {
+    color: #fff;
+    font-size: 1.15rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer__privacy a:hover {
+    color: #fecc00;
+}
+.footer__socials a {
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.footer__socials img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s;
+}
+.footer__socials a:hover img {
+    filter: brightness(0) invert(0.7) sepia(1) hue-rotate(-40deg) saturate(5);
+}
+@media (max-width: 1100px) {
+    .footer__main {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .footer__col {
+        min-width: 150px;
+        max-width: 220px;
+    }
+}
+@media (max-width: 800px) {
+    .footer__main {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 10px;
+    }
+    .footer__col,
+    .footer__col--contacts {
+        max-width: 100%;
+        min-width: 0;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .footer__bottom {
+        flex-direction: column;
+        gap: 10px;
+        padding: 18px 10px;
+    }
 }

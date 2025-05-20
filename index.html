@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -19,10 +20,10 @@
             <div class="header__contacts">
                 <p class="header__contacts-date">Пн-Пт 09:00 – 18:00</p>
                 <p class="header__contacts-word">Контакты</p>
-                <a class="header__contacts-telephone" href="tel:+99995555555">
-                    +7 (951) 357-651
+                <a class="header__contacts-telephone" href="tel:74812302604">
+                   +7 (4812) 302-604
                 </a>
-                <a class="header__contacts-telephone" href="tel:+99995555555">
+                <a class="header__contacts-telephone" href="tel:+79525356113">
                     +7 (952) 535-61-13
                 </a>
             </div>
@@ -100,6 +101,19 @@
             <img class="navigation_loop" src="/imeges/Link.svg" alt="-">
         </div>
     </header>
+
+    <form class="login-form" method="post" action="login.php">
+        <div class="login-form__title">Вход</div>
+        <?php if (!empty($error)): ?>
+        <div class="login-form__error">
+            <?= htmlspecialchars($error) ?>
+        </div>
+        <?php endif; ?>
+        <input class="login-form__input" type="text" name="username" placeholder="Логин" required>
+        <input class="login-form__input" type="password" name="password" placeholder="Пароль" required>
+        <button class="login-form__btn" type="submit">Войти</button>
+    </form>
+
     <main>
         <section class="advantages content-section">
             <form class="advantages-form" action="" method="">
@@ -153,9 +167,120 @@
                 </ul>
             </div>
         </section>
-    </main>
-    <footer>
+        <section class="tariffs content-section">
+            <h2 class="tariffs__title">Тарифы бухгалтерского сопровождения</h2>
+            <div class="tariffs__cards">
+                <div class="tariff-card">
+                    <div class="tariff-card__header">Отчетность</div>
+                    <div class="tariff-card__desc">
+                        Вы самостоятельно вносите в программу все документы, а мы будем рассчитывать налоги и сдавать отчетность.<br><br>
+                        Для клиентов с нулевой отчетностью цена будет еще меньше.
+                    </div>
+                    <div class="tariff-card__price">От 2 600 руб./мес</div>
+                    <div class="tariff-card__subtitle">Что делаем мы</div>
+                    <ul class="tariff-card__list">
+                        <li>предоставляем вам доступ к облачной версии программы 1С:Бухгалтерия 3.0 для одного пользователя</li>
+                        <li>предоставляем цифровую подпись для 1С-Отчетности</li>
+                        <li>составляем регистры бухгалтерского учета и отчеты об остатках денежных средств по расчетному счету и кассе, состоянии дебиторской и кредиторской задолженности</li>
+                        <li>рассчитываем налоги, формируем и своевременно сдаем отчетность</li>
+                        <li>информируем вас о суммах и сроках</li>
+                        <li>консультируем вас по налогам и учету</li>
+                        <li>устанавливаем чат и личный кабинет для взаимодействия с бухгалтером</li>
+                    </ul>
+                    <button class="btn tariff-card__btn">Добавить в <br>корзину</button>
+                </div>
+                <div class="tariff-card">
+                    <div class="tariff-card__header">Комплексный сервис</div>
+                    <div class="tariff-card__desc">
+                        Мы ведем бухгалтерский, налоговый, кадровый учет и рассчитываем зарплату для ваших сотрудников.<br><br>
+                        На любом тарифе предоставляем доступ к облачной 1С:Бухгалтерии и консультируем по налогам и учету.
+                    </div>
+                    <div class="tariff-card__price">От 6 100 руб./мес</div>
+                    <div class="tariff-card__subtitle">Что делаем мы</div>
+                    <ul class="tariff-card__list">
+                        <li>предоставляем в аренду одну или несколько лицензий 1С:Бухгалтерия 8</li>
+                        <li>изготавливаем цифровую подпись для 1С-Отчетности</li>
+                        <li>ведем бухгалтерский и налоговый учет, рассчитываем заработную плату</li>
+                        <li>ведем кадровый учет</li>
+                        <li>составляем и сдаем отчетность по электронным каналам связи</li>
+                        <li>готовим платежные поручения на уплату налогов и сборов</li>
+                        <li>собираем, систематизируем и контролируем оформление первичных документов</li>
+                        <li>консультируем по бухгалтерскому и налоговому учету</li>
+                    </ul>
+                    <button class="btn tariff-card__btn">Добавить в <br>корзину</button>
+                </div>
+            </div>
+        </section>
 
+    </main>
+    <footer class="footer">
+        <div class="footer__main content-section">
+            <div class="footer__col">
+                <div class="footer__col-title">Компания</div>
+                <ul class="footer__list">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Сотрудники</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Тарифы ведения учета</div>
+                <ul class="footer__list">
+                    <li><a href="#">Отчетность</a></li>
+                    <li><a href="#">Комплексный сервис</a></li>
+                    <li><a href="#">Сравнение тарифов</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Услуги</div>
+                <ul class="footer__list">
+                    <li><a href="#">Регистрация ИП</a></li>
+                    <li><a href="#">Регистрация ООО</a></li>
+                    <li><a href="#">Услуги для граждан Белоруссии</a></li>
+                    <li><a href="#">Учет для маркетплейсов</a></li>
+                    <li><a href="#">Ввод первичных документов</a></li>
+                    <li><a href="#">Экспресс-аудит бухгалтерского учёта</a></li>
+                    <li><a href="#">Восстановление бухгалтерского учёта</a></li>
+                    <li><a href="#">Маркировка</a></li>
+                    <li><a href="#">Проверка контрагентов 1СПАРК Риски</a></li>
+                    <li><a href="#">Доступ к программе для учёта</a></li>
+                    <li><a href="#">Подключение к 1С-ЭДО</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Наш опыт</div>
+                <ul class="footer__list">
+                    <li><a href="#">Публикации</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Отзывы клиентов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--contacts">
+                <div class="footer__col-title">Контакты</div>
+                <div class="footer__contacts-phones">
+                    <a href="tel:+74812302604">+7 (4812) 302-604</a><br>
+                    <a href="tel:+79525356113">+7 (952) 535-61-13</a>
+                </div>
+                <div class="footer__contacts-mail">
+                    Напишите нам: <a href="mailto:bo@1eska.ru">bo@1eska.ru</a>
+                </div>
+                <div class="footer__contacts-address">
+                    Смоленск, Большая Краснофлотская, д. 34, второй этаж
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__privacy">
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__socials">
+                <a href="#"><img src="./imeges/VKontakte-custom.svg" alt="VK"></a>
+                <a href="#"><img src="./imeges/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="./imeges/odnoklassniki-svgrepo-com.svg" alt="OK"></a>
+            </div>
+        </div>
     </footer>
 </body>
 
